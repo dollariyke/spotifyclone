@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Circular";
+  src: url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.eot%22");
+  src: url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.eot?#iefix%22")
+      format("embedded-opentype"),
+    url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.woff%22")
+      format("woff"),
+    url("https://www.bu.edu/cdn/fonts/Circular/Circular-Bold.ttf%22")
+      format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Circular", Helvetica, Arial, sans-serif;
+}
+
+svg {
+  width: 200px;
+  height: 66.66px;
+  margin: 0 auto;
+}
+.logo {
+  margin: 0px 0px 30px;
+  padding: 25px 0px 10px;
+  border-bottom: 1px solid rgb(199, 198, 198);
+}
+.wrapper {
+  width: 450px;
+  height: 725px;
+  margin: 0 auto;
+}
+
+.button-link {
+  padding: 14px 14px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 30px;
+}
+.button-wrapper {
+  margin-bottom: 10px;
+}
+a.btn.btn-primary.w-100.button-link:hover {
+  background-color: black;
+  color: #ffffff;
+}
+.divider {
+  border-top: 1px solid #d9dadc;
+  display: block;
+  line-height: 1px;
+  margin: 15px 0;
+  position: relative;
+  text-align: center;
+}
+strong.divider-title {
+  background: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+}
