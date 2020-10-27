@@ -40,12 +40,15 @@ a.button-fb {
   background-color: #3b5998;
 }
 a.button-ap {
-  background-color: #000000;
+  background-color: #000;
   padding: 14px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 30px;
+  opacity: 1;
+  transition: opacity 0.25s ease;
 }
+
 a.button-gg,
 a.button-num,
 a.button-link {
@@ -59,8 +62,8 @@ a.button-link {
 }
 
 a.button-ap:hover {
-  background-color: black;
   opacity: 0.8;
+  background-color: #000;
 }
 
 a.button-link:hover,
@@ -102,9 +105,9 @@ a.password-rem:hover {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
+  line-height: 1;
 }
 
 /* Hide the browser's default checkbox */
@@ -119,14 +122,14 @@ a.password-rem:hover {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   height: 20px;
   width: 20px;
   background-color: #eee;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a green background */
 .checkwrapper input:checked ~ .checkmark {
   background-color: #15883e;
 }
@@ -146,10 +149,27 @@ a.password-rem:hover {
 /* Style the checkmark/indicator */
 .checkwrapper .checkmark:after {
   left: 6px;
-  top: 5px;
+  top: 3px;
   width: 6px;
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
+}
+
+.btn {
+  border: none;
+}
+
+.log-in-btn {
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 25px;
+  background-color: #15883e;
+  border: none;
+  padding: 10px 80px;
+}
+
+.log-in-btn:hover {
+  background-color: #259e50;
 }
