@@ -31,19 +31,47 @@ svg {
   margin: 0 auto;
 }
 
-.button-link {
+a.button-fb {
+  padding: 14px 14px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: #3b5998;
+}
+a.button-ap {
+  background-color: #000000;
   padding: 14px 14px 18px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 30px;
 }
+a.button-gg,
+a.button-num,
+a.button-link {
+  padding: 14px 14px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #616467;
+  border: 2px solid #616467;
+}
+
+a.button-ap:hover {
+  background-color: black;
+  opacity: 0.8;
+}
+
+a.button-link:hover,
+a.button-gg:hover,
+a.button-num:hover {
+  background-color: #616467;
+  border: 2px solid #616467;
+}
 .button-wrapper {
   margin-bottom: 10px;
 }
-a.btn.btn-primary.w-100.button-link:hover {
-  background-color: black;
-  color: #ffffff;
-}
+
 .divider {
   border-top: 1px solid #d9dadc;
   display: block;
