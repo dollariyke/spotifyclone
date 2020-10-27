@@ -84,7 +84,7 @@
         <form>
           <div class="row">
             <div class="col-sm-12 button-wrapper">
-              <label for="Email1">Email address or username</label>
+              <label for="Email1" style="font-weight: 700;">Email address or username</label>
               <input
                 type="email"
                 class="form-control"
@@ -96,7 +96,7 @@
           </div>
           <div class="row">
             <div class="col-sm-12 button-wrapper">
-              <label for="InputPassword1">Password</label>
+              <label for="InputPassword1" style="font-weight: 700;">Password</label>
               <input
                 type="password"
                 class="form-control"
@@ -108,27 +108,19 @@
           <div class="row" style="padding: 0">
             <div class="col-12">
               <p style="margin: 8px 0px 16px">
-                <a href="#" style="color: #616467; text-decoration: underline"
-                  >Forgot your password?</a
-                >
+                <a class="password-rem" href="#" style="text-decoration: underline;">Forgot your password?</a>
               </p>
             </div>
           </div>
 
           <div class="row">
             <div class="col-6 w-100">
-              <div class="form-check my-auto">
-                <label class="form-check-label">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    style="color: #616467"
-                    
-                  />Remember me
-                </label>
-              </div>
+              <label class="checkwrapper" style="font-size: 16px;">Remember me
+                <input type="checkbox" checked="checked">
+                <span class="checkmark" style="border: 1px solid #15883e;border-radius: 3px;"></span>
+              </label>
             </div>
-            <div class="col-6 w-100">
+            <div class="col-6 w-100" style="height: 48px;">
               <button
                 type="submit"
                 class="btn btn-primary w-100"
@@ -138,6 +130,8 @@
                   border-radius: 25px;
                   background-color: #15883e;
                   border: none;
+                  padding: 16px 14px 18px;
+                  height: 48px;
                 "
               >
                 LOG IN
