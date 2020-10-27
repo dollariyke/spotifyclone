@@ -126,7 +126,7 @@ a.password-rem:hover {
   background-color: #eee;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When the checkbox is checked, add a green background */
 .checkwrapper input:checked ~ .checkmark {
   background-color: #15883e;
 }
