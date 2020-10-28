@@ -16,11 +16,7 @@ body {
   box-sizing: border-box;
 }
 
-svg {
-  width: 200px;
-  height: 66.66px;
-  margin: 0 auto;
-}
+
 .logo {
   margin: 0px 0px 30px;
   padding: 25px 0px 10px;
@@ -172,4 +168,46 @@ a.password-rem:hover {
 
 .log-in-btn:hover {
   background-color: #259e50;
+}
+
+/*Signup css*/
+div.container.signup{
+  width: 450px;
+  padding: 0px;
+
+}
+div.signup-header{
+  width: 100%;
+  padding: 40px 0px 32px;
+}
+.signup-header-text{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 40px 0px 0px;
+  color: #181818;
+}
+
+
+a.link-fb{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  line-height: 16px;
+  padding: 16px 12px;
+  border: 0;
+  border-radius: 500px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 900px;
+  text-align: center;
+  background-color: rgb(58, 88, 151);
+  color: #fff;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 0px 0px 22px;
+}
+a.link-fb:hover{
+  color: white;
 }
