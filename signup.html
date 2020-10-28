@@ -45,8 +45,8 @@
       <!--form section-->
       <form action="">
         <h2 class="form-header text-center">Signup with your email address</h2>
-        <div class="myemail">
-          <label for="email" class="d-block">What's your email?</label>
+        <div class="myfield">
+          <label for="email" class="d-block lab">What's your email?</label>
           <input
             type="email"
             id="email"
@@ -56,8 +56,8 @@
             required
           />
         </div>
-        <div class="myemail">
-          <label for="email" class="d-block">What's your email?</label>
+        <div class="myfield">
+          <label for="email_confirm" class="d-block lab">confirm your email?</label>
           <input
             type="email"
             id="email_confirm"
@@ -67,27 +67,30 @@
             required
           />
         </div>
-        <div class="myemail">
-          <label for="email" class="d-block">What's your email?</label>
+        <div class="myfield">
+          <label for="email_password" class="d-block lab">create a password.</label>
           <input
-            type="email"
-            id="email_confirm"
-            placeholder="enter your email again"
-            name="email_confirm"
+            type="password"
+            id="email_password"
+            placeholder="create a password"
+            name="email_email_password"
             value=""
             required
           />
         </div>
-        <div class="myemail">
-          <label for="email" class="d-block">What's your email?</label>
+        <div class="myfield">
+          <label for="email_profilename" class="d-block lab">What should we call you?</label>
           <input
-            type="email"
-            id="email_confirm"
-            placeholder="enter your email again"
-            name="email_confirm"
+            type="text"
+            id="email_profilename"
+            placeholder="enter a profile name"
+            name="email_profilename"
             value=""
             required
           />
+          <div class="mytext">
+          This appear on your profile.
+          </div>
         </div>
       </form>
     </div>
