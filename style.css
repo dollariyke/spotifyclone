@@ -185,7 +185,8 @@ div.signup-header {
   color: #181818;
 }
 
-a.link-fb {
+a.link-fb,
+button.sign-up {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -199,12 +200,19 @@ a.link-fb {
   letter-spacing: 2px;
   font-weight: 900px;
   text-align: center;
-  background-color: rgb(58, 88, 151);
   color: #fff;
   vertical-align: middle;
   text-decoration: none;
   margin: 0px 0px 22px;
 }
+a.link-fb {
+  background-color: rgb(58, 88, 151);
+}
+
+button.sign-up {
+  background-color: #1db954;
+}
+
 a.link-fb:hover {
   color: white;
 }
@@ -221,19 +229,86 @@ h2.form-header {
   padding-bottom: 24px;
 }
 input#email,
-input#email_confirm,input#email_profilename,input#email_password{
+input#email_confirm,
+input#email_profilename,
+input#email_password {
   width: 100%;
   height: 48px;
   padding: 14px;
 }
 
-label.lab{
+.lab {
   font-weight: 700;
   color: #181818;
   font-size: 14px;
 }
-.mytext{
+p.lab {
+  margin: 0px;
+  padding: 0px 0px 8px;
+}
+label.d-block {
+  color: #181818;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 0px 8px;
+}
+.mytext {
   font-size: 14px;
   color: #181818;
   margin: 8px 0px 0px;
+}
+
+.myday {
+  width: 90px;
+  height: 76px;
+}
+.mymonth {
+  width: 202.5px;
+  height: 76px;
+}
+.myyear {
+  width: 112.5;
+  height: 76px;
+}
+input#day {
+  width: 90px;
+  height: 48px;
+  padding: 14px;
+}
+select#month {
+  width: 202.5px;
+  height: 48px;
+  padding: 14px 44px 14px 14px;
+}
+input#year {
+  height: 48px;
+  width: 112.5px;
+  padding: 14px;
+}
+
+.mygender {
+  padding: 0px 24px 0px 12px;
+  font-size: 14px;
+  color: #181818;
+}
+
+.data-share {
+  color: #181818;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25;
+}
+
+.link-texts {
+  color: #1db954;
+  text-decoration: underline;
+  text-decoration-color: #1db954;
+  font-size: 12px;
+}
+.link-texts:hover {
+  opacity: 0.8;
+}
+p.main-text {
+  font-size: 12px;
+  padding: 0px 0px 12px;
 }
