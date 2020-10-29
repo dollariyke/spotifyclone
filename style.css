@@ -297,6 +297,7 @@ input#year {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.25;
+  padding: 0px 10px 0px 26px;
 }
 
 .link-texts {
