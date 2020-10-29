@@ -42,6 +42,7 @@
           </div>
         </div>
       </div>
+
       <!--form section-->
       <form action="">
         <h2 class="form-header text-center">Signup with your email address</h2>
@@ -56,8 +57,11 @@
             required
           />
         </div>
+
         <div class="myfield">
-          <label for="email_confirm" class="d-block lab">confirm your email?</label>
+          <label for="email_confirm" class="d-block lab"
+            >confirm your email?</label
+          >
           <input
             type="email"
             id="email_confirm"
@@ -67,8 +71,11 @@
             required
           />
         </div>
+
         <div class="myfield">
-          <label for="email_password" class="d-block lab">create a password.</label>
+          <label for="email_password" class="d-block lab"
+            >create a password.</label
+          >
           <input
             type="password"
             id="email_password"
@@ -78,8 +85,11 @@
             required
           />
         </div>
+
         <div class="myfield">
-          <label for="email_profilename" class="d-block lab">What should we call you?</label>
+          <label for="email_profilename" class="d-block lab"
+            >What should we call you?</label
+          >
           <input
             type="text"
             id="email_profilename"
@@ -88,49 +98,102 @@
             value=""
             required
           />
-          <div class="mytext">
-          This appear on your profile.
-          </div>
+          <div class="mytext">This appear on your profile.</div>
+        </div>
 
-          <label for="mydob" class="d-block lab">What is your date of birth?</label>
-          <div class="myfield d-flex justify-content-around">
-            <div class="myday" style="width:90px; height:76px;">
-            <label for="mydob" class="d-block ">Day</label>
-            <input
-              type="text"
-              id="mydob"
-              placeholder="DD"
-              name="mydob"
-              value=""
-              pattern="((0?[1-9)|([12][0-9])|(3[01]))"
-              required
-            />
-            </div>
+        <div class="myfield">
+          <p for="mydob" class="d-block lab">What is your date of birth?</p>
+          <div class="dobwrapper d-flex justify-content-between">
             <div class="myday">
-              <label for="mydob" class="d-block ">Month</label>
+              <label for="day" class="d-block">Day</label>
               <input
                 type="text"
-                id="mydob"
+                id="day"
                 placeholder="DD"
-                name="mydob"
+                name="day"
                 value=""
                 pattern="((0?[1-9)|([12][0-9])|(3[01]))"
                 required
               />
-              </div>
-              <div class="myday">
-                <label for="mydob" class="d-block ">Year</label>
-                <input
-                  type="text"
-                  id="mydob"
-                  placeholder="DD"
-                  name="mydob"
-                  value=""
-                  pattern="((0?[1-9)|([12][0-9])|(3[01]))"
-                  required
-                />
-                </div>
+            </div>
+
+            <div class="mymonth">
+              <label for="month" class="d-block">Month</label>
+              <select id="month" name="month">
+                <option selected>Month</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </div>
+
+            <div class="myyear" style="width: 112.5px">
+              <label for="year" class="d-block">Year</label>
+              <input
+                type="text"
+                id="year"
+                placeholder="YYYY"
+                name="year"
+                value=""
+                required
+              />
+            </div>
+          </div>
         </div>
+
+        <div class="myfield">
+          <p class="lab">What is your gender?</p>
+          <div class="myradio d-flex">
+            <div>
+              <input type="radio" id="gender" name="gender" value="" />
+              <label class="mygender" for="gender">Male</label>
+            </div>
+
+            <div>
+              <input type="radio" id="gender" name="gender" value="" />
+              <label class="mygender" for="gender">Female</label>
+            </div>
+
+            <div>
+              <input type="radio" id="gender" name="gender" value="" />
+              <label class="mygender" for="gender">Non-binary</label>
+            </div>
+          </div>
+        </div>
+
+        <label class="checkwrapper mb-0 data-share"
+          >Share my registration data with Spotify's content providers for
+          marketing purposes. Note that your data may be transferred to a
+          country outside of the EEA as described in our privacy policy.
+          <input type="checkbox" checked="checked" />
+          <span
+            class="checkmark"
+            style="border: 1px solid #15883e; border-radius: 3px"
+          ></span>
+        </label>
+
+        <div class="terms">
+          <p class="main-text text-left" style="margin-top: 24px">
+            By clicking on Sign up, you agree to Spotify's
+            <a class="link-texts">Terms and Conditions of Use.</a>
+          </p>
+          <p class="main-text text-center">
+            To learn more about how Spotify collects, uses, shares and protects
+            your personal data please read Spotify's
+            <a class="link-texts">Privacy Policy.</a>
+          </p>
+        </div>
+
+        <button type="submit" class="btn sign-up">SIGN UP</button>
       </form>
     </div>
     <script
