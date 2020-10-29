@@ -28,7 +28,7 @@ const login =(event)=>{
 
     for(let i =0 ; i <users.length ; i++){
         if(username === users[i].email && password === users[i].password){
-            window.location.assign("https://www.w3schools.com");
+            window.location.assign("index.html");
             return
         }
     }
