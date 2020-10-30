@@ -10,15 +10,14 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="container-fluid text-center logo">
-      <svg style="  width: 200px;
-      height: 66.66px;
-      margin: 0 auto;"
+      <svg
+        style="width: 200px; height: 66.66px; margin: 0 auto"
         viewBox="0 0 63 20"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMin meet"
@@ -39,125 +38,155 @@
               to continue, log in to spotify
             </h1>
           </div>
-          <div class="col-sm-12 w-100 button-wrapper">
-            <a
-              class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-fb"
-              href="#"
-              role="button"
-              ><i class="fab fa-facebook" id="fab-icon" ></i>CONTINUE WITH FACEBOOK</a
-            >
-          </div>
-          <div class="col-sm-12 w-100 button-wrapper">
-            <a
-              class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-ap"
-              href="#"
-              role="button"
-              ><img src="image/Apple-logo-vector-01.svg" width="20px" height="20px"  alt="" style="margin:0px 14px 0px 0px;"><span class="mb-0">CONTINUE WITH APPLE</span></a
-            >
-          </div>
-          <div class="col-sm-12 w-100 button-wrapper">
-            
-            <a
-              class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-gg"
-              href="#"
-              role="button"
-              ><img src="image/google-icon.svg" width="13px" height="13px"  alt="" style="margin:0px 14px 0px 0px;">CONTINUE WITH GOOGLE</a
-            >
-          </div>
-          <div class="col-sm-12 w-100 button-wrapper">
-            <a
-              class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-num"
-              href="#"
-              role="button"
-              >CONTINUE WITH PHONE NUMBER</a
-            >
+          <div class="col-sm-12  d-none error_container" id="error-div">
+          <p class="error_msg">Email or password incorrect</p>
+        </div>
+        <div class="col-sm-12 w-100 button-wrapper">
+          <a
+            class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-fb"
+            href="#"
+            role="button"
+            ><i class="fab fa-facebook" id="fab-icon"></i>CONTINUE WITH
+            FACEBOOK</a
+          >
+        </div>
+        <div class="col-sm-12 w-100 button-wrapper">
+          <a
+            class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-ap"
+            href="#"
+            role="button"
+            ><img
+              src="image/Apple-logo-vector-01.svg"
+              width="20px"
+              height="20px"
+              alt=""
+              style="margin: 0px 14px 0px 0px"
+            /><span class="mb-0">CONTINUE WITH APPLE</span></a
+          >
+        </div>
+        <div class="col-sm-12 w-100 button-wrapper">
+          <a
+            class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-gg"
+            href="#"
+            role="button"
+            ><img
+              src="image/google-icon.svg"
+              width="13px"
+              height="13px"
+              alt=""
+              style="margin: 0px 14px 0px 0px"
+            />CONTINUE WITH GOOGLE</a
+          >
+        </div>
+        <div class="col-sm-12 w-100 button-wrapper">
+          <a
+            class="btn btn-primary d-flex justify-content-center align-items-center w-100 button-num"
+            href="#"
+            role="button"
+            >CONTINUE WITH PHONE NUMBER</a
+          >
+        </div>
+      </div>
+      <!--divider-->
+      <div class="row">
+        <div class="col-12">
+          <div class="divider">
+            <strong class="divider-title">OR</strong>
           </div>
         </div>
-        <!--divider-->
+      </div>
+
+      <!--Log in Form-->
+      <form>
+        <div class="row">
+          <div class="col-sm-12 button-wrapper">
+            <label for="Email1" style="font-weight: 700"
+              >Email address or username</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="Email1"
+              aria-describedby="emailHelp"
+              placeholder="Email address or username"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 button-wrapper">
+            <label for="InputPassword1" style="font-weight: 700"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="InputPassword1"
+              placeholder="Password"
+              required
+            />
+          </div>
+        </div>
+        <div class="row" style="padding: 0">
+          <div class="col-12">
+            <p style="margin: 8px 0px 16px">
+              <a
+                class="password-rem"
+                href="#"
+                style="text-decoration: underline"
+                >Forgot your password?</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="w-100 d-flex justify-content-between align-items-center">
+          <label class="checkwrapper mb-0" style="font-size: 16px"
+            >Remember me
+            <input type="checkbox" checked="checked" />
+            <span
+              class="checkmark"
+              style="border: 1px solid #15883e; border-radius: 3px"
+            ></span>
+          </label>
+          <button type="submit" class="btn btn-primary log-in-btn" id="submit">
+            LOG IN
+          </button>
+        </div>
+      </form>
+      <!--Sign Up section-->
+      <div class="container sign-up" style="padding: 0px">
         <div class="row">
           <div class="col-12">
-            <div class="divider">
-              <strong class="divider-title">OR</strong>
-            </div>
+            <div class="divider"></div>
           </div>
         </div>
 
-        <!--Log in Form-->
-        <form>
-          <div class="row">
-            <div class="col-sm-12 button-wrapper">
-              <label for="Email1" style="font-weight: 700;">Email address or username</label>
-              <input
-                type="email"
-                class="form-control"
-                id="Email1"
-                aria-describedby="emailHelp"
-                placeholder="Email address or username"
-                required
-              />
-            </div>
+        <div class="row">
+          <div class="col-12 text-center" style="margin: 10px 0px">
+            <h2 style="font-size: 18px; font-weight: 700">
+              Don't have an account?
+            </h2>
           </div>
-          <div class="row">
-            <div class="col-sm-12 button-wrapper">
-              <label for="InputPassword1" style="font-weight: 700;">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="InputPassword1"
-                placeholder="Password"
-                required
-              />
-            </div>
-          </div>
-          <div class="row" style="padding: 0">
-            <div class="col-12">
-              <p style="margin: 8px 0px 16px">
-                <a class="password-rem" href="#" style="text-decoration: underline;">Forgot your password?</a>
-              </p>
-            </div>
-          </div>
+        </div>
 
-            <div class="w-100 d-flex justify-content-between align-items-center">
-                <label class="checkwrapper mb-0" style="font-size: 16px;">Remember me
-                  <input type="checkbox" checked="checked">
-                  <span class="checkmark" style="border: 1px solid #15883e;border-radius: 3px;"></span>
-                </label>
-                <button
-                  type="submit"
-                  class="btn btn-primary log-in-btn"
-                  id="submit"
-                >
-                  LOG IN
-                </button>
-            </div>
-
-        </form>
-        <!--Sign Up section-->
-        <div class="container sign-up" style="padding: 0px;">
-          <div class="row">
-                <div class="col-12">
-                  <div class="divider"></div>
-                </div>
-          </div>
-                
-          <div class="row">
-          <div class="col-12 text-center" style="margin:10px 0px"><h2 style="font-size: 18px; font-weight: 700;">Don't have an account?</h2></div>
-          </div>
-
-          <div class="row">
+        <div class="row">
           <div class="col-12">
             <a
-            class="btn btn-primary w-100 button-link"
-            href="/signup.html"
-            role="button"
-            >SIGN UP FOR SPOTIFY</a
-          >
+              class="btn btn-primary w-100 button-link"
+              href="/signup.html"
+              role="button"
+              >SIGN UP FOR SPOTIFY</a
+            >
           </div>
-          </div>
+        </div>
       </div>
     </div>
-  <script src="/index.js"></script>
-    <script src="https://kit.fontawesome.com/82376f47be.js" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/82376f47be.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
