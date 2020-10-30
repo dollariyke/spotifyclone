@@ -29,7 +29,7 @@ body {
   width: 400px;
   height: 48px;
   margin-bottom: 10px;
-  background-color: red;
+  background-color: #e22134;
   color: white;
   font-size: 12px;
 }
@@ -179,6 +179,7 @@ a.password-rem:hover {
   background-color: #15883e;
   border: none;
   padding: 10px 80px;
+  color: white !important;
 }
 
 .log-in-btn:hover {
@@ -328,4 +329,15 @@ input#year {
 p.main-text {
   font-size: 12px;
   padding: 0px 0px 12px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus,
+.btn:active,
+.btn:hover {
+  box-shadow: none !important;
+  outline: 0;
 }
