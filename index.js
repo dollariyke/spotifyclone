@@ -19,7 +19,16 @@ const users = [{
     password:"andrewers"
 }
 
-]
+];
+
+const changeBorderColor = () =>{
+    const inputs = document.getElementsByClassName('form-control');
+
+    for(let i =0 ; i <inputs.length ; i++){
+        
+        inputs[i].style.borderColor = 'red';
+    }
+}
 
 const login =(event)=>{
     const username = document.getElementById('Email1').value;
@@ -34,7 +43,8 @@ const login =(event)=>{
         
     }
     document.querySelector('#error-div').classList.remove('d-none')
-}
+    changeBorderColor()
+;}
 
 let mybtn = document.getElementById('submit');
 mybtn.addEventListener('click',login);
