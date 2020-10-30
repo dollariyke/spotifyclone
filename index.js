@@ -31,8 +31,9 @@ const login =(event)=>{
             window.location.assign("index.html");
             return
         }
+        
     }
-    console.log('wrong user details');
+    document.querySelector('#error-div').classList.remove('d-none')
 }
 
 let mybtn = document.getElementById('submit');
